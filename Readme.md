@@ -1,13 +1,13 @@
 # Личный проект «Глейси»
 
 * Студент: [Игорь Бабушкин](https://up.htmlacademy.ru/htmlcss/20/user/185816).
-* Наставник: [Виктория Коваленко] (https://htmlacademy.ru/profile/id42638).
+* Наставник: [Виктория Коваленко] (https://up.htmlacademy.ru/htmlcss/20/user/42638).
 
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
-
+-
 ---
 
 ### Памятка
