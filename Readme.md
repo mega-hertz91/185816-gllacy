@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Игорь Бабушкин](https://up.htmlacademy.ru/htmlcss/20/user/185816).
-* Наставник: [Виктория Коваленко] (https://up.htmlacademy.ru/htmlcss/20/user/42638).
+* Наставник: [Виктория Коваленко](https://up.htmlacademy.ru/htmlcss/20/user/42638).
 
 ---
 
