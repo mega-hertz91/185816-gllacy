@@ -12,8 +12,16 @@
 	      <nav class="main-navigation">
 		      <ul class="main-navigation-list">
 			      <li class="main-navigation-items"><a href="">Каталог</a>
-				  <li class="main-navigation-items"><a href="">Доставка и оплата</a>
-				  <li class="main-navigation-items"><a href="">О компании</a>
+				      <ul class="hidden-menu">
+					      <li><a href="Novelty">Новинки</a></li>
+						  <li><a href="Creamy">Сливочное</a></li>
+						  <li><a href="Scherbet">Щербеты</a></li>
+						  <li><a href="Fruit-ace">Фруктовый лед</a></li>
+						  <li><a href="Melorin">Мелорин</a></li>
+					  </ul>
+					  </li>
+				  <li class="main-navigation-items"><a href="">Доставка и оплата</a></li>
+				  <li class="main-navigation-items"><a href="">О компании</a></li>
 			  </ul>
 		  </nav>
 		  <ul class="right-nav-case">
@@ -37,15 +45,18 @@
 			  <img src="image/acecream.jpeg" width="450" height="450" alt="мороженое Gllacy">
 			  <button class="site-button">Давайте оба!</button>
 		  </section>
-		  <section class="main-sale-jam">
-			  <h3>Малинка даром!</h3>
-			  <p>При покупке 2 кг любого мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-			  <a class="button-site button-sale" href="">Хочу варенье!</a>
-		  </section>
-		  <section class="main-sale-chocolate">
-			  <h3>Шоколадки даром!</h3>
-			  <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-			  <a class="button-site button-sale" href="">Хочу шоколадки!</a>
+		  <section class="main-baner">
+		      <h2 class="visually-hidden">Главынй банер</h2>
+		      <article class="baner-sale-jam">
+			      <h3>Малинка даром!</h3>
+			      <p>При покупке 2 кг любого мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+			      <a class="button-site button-sale" href="">Хочу варенье!</a>
+		      </article>
+		      <article class="baner-sale-chocolate">
+				  <h3>Шоколадки даром!</h3>
+			      <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+			      <a class="button-site button-sale" href="">Хочу шоколадки!</a>
+		      </article>
 		  </section>
 		  <section class="main-acecream">
 		      <h2 class="visually-hidden">Прайс лист</h2>
@@ -141,5 +152,11 @@
 		  </p>
 		  <p class="copyright-footer">Сделано в <a href="http://htmlacademy.ru">HTML Academy &copy; 2017</a></p>
 	  </footer>
+	  <section class="modal-feedback">
+	      <h2 class="visually-hidden">Форма обратной связи</h2>
+		  <p>Мы обязательно вам ответим</p>
+		  <!-------Тут будет форма--------->
+		  <a class="button-site button-modal-feedback" href="feedback.php">Отправить</a>
+	  </section>
   </body>
 </html>
