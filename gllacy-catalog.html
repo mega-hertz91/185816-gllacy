@@ -30,12 +30,34 @@
 		        <ul class="right-nav-case">
 		            <li class="right-nav-case-item">
 			              <a class="search" aria-label="Поиск по сайту"></a>
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                        <label class="visually-hidden" for="main-search">Поиск по сайту</label>
+                        <input type="search" name="general-search" id="main-search" placeholder="Что ищем?">
+                    </form>
 			          </li>
 			          <li class="rigth-nav-case-item">
 			              <a class="enter">Вход</a>
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                        <p>
+                            <label class="visually-hidden" for="main-enter-email">Электронная почта</label>
+                            <input type="email" name="enter-email" id="main-enter-email" placeholder="Электронная почта">
+                        </p>
+                        <p>
+                            <label class="visually-hidden" for="enter-password">Пароль</label>
+                            <input type="password" name="main-password" id="enter-password" placeholder="Пароль">
+                        </p>
+                        <p>
+                            <input class="main-enter-button" type="submit" value="Войти">
+                        </p>
+                        <ul>
+                            <li><a href="forgot-password.html"></a>Забыли пароль</li>
+                            <li><a href="news-refistration.html">Новая регистрация</a></li>
+                        </ul>
+                    </form>
 			          </li>
 			          <li class="right-nav-case-item">
-			              <a class="cart">Пусто</a>
+			              <a class="cart">2 товара</a>
+                    <!--Пока не определился-->
 			          </li>
             </ul>
             <p>С 10 до 20, ежедневно<br>
@@ -53,7 +75,17 @@
 		        <section class="main-filter">
 		            <h2 class="visually-hidden">Главный фильтр</h2>
 		            <div class="filter-sorting">
-                     <!--Место формы-->
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                        <label for="main-sorting">Сортировка:</label>
+                        <select mane="catalog-sorting" id="main-sorting">
+                            <option value="popylaruty">По популярности</option>
+                            <option value="not expensive">Сначала дорогие</option>
+                            <option value="expensive">Сначала дорогие</option>
+                            <option value="fat content">По жирности</option>
+                        </select>
+                        <label for="main-range">Цена: 100 руб. - 500 руб.</label>
+                        <input type="range" name="main-range" min="100" max="500">
+                    </form>
 			          </div>
                 <div class="filter-filling">
 			              <!--Место формы-->
