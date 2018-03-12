@@ -13,17 +13,15 @@
 	          <nav class="main-navigation">
 		            <ul class="main-navigation-list">
 			              <li class="main-navigation-items"><a href="#">Каталог</a>
-		            <ul class="main-navigation-list">
-			              <li class="main-navigation-items"><a href="#">Каталог</a>
 				                <ul class="hidden-menu">
 					                  <li><a href="#Novelty">Новинки</a></li>
 						                <li><a href="#Creamy">Сливочное</a></li>
 						                <li><a href="#Scherbet">Щербеты</a></li>
 						                <li><a href="#Fruit-ace">Фруктовый лед</a></li>
 						                <li><a href="#Melorin">Мелорин</a></li>
-					              </ulвв
-				            </liвв
-				            <li class="main-navigation-items"вв<a href="delivery.php"ввДоставка и оплата</aвв</liвв
+					              </ul>
+				            </li>
+				            <li class="main-navigation-items"><a href="delivery.php">Доставка и оплата</a></li>
 				            <li class="main-navigation-items"><a href="about-us.html">О компании</a></li>
 			          </ul>
 		        </nav>
@@ -57,11 +55,24 @@
 			          </li>
 			          <li class="right-nav-case-item">
 			              <a class="cart">2 товара</a>
-                    <!--Пока не определился-->
+                    <div class="main-cart">
+                        <ul>
+                            <li>Пломбир с апельсиновым джемом</li>
+                            <li>1,5&nbsp;х&nbsp;200руб.</li>
+                            <li>300&nbsp;руб.</li>
+                        </ul>
+                        <ul>
+                            <li>Клубничный пломбир с присыпкой из белого шоколада</li>
+                            <li>1,5&nbsp;х&nbsp;300руб.</li>
+                            <li>450&nbsp;руб.</li>
+                        </ul>
+                    </div>
+                    <p></p>
+                    <a class="site-button cart-button" href="checkout.php">Оформить заказ</a>
 			          </li>
             </ul>
             <p>С 10 до 20, ежедневно<br>
-		        <p><a class="number" href="tel:+79124502525">8&nbsp;912&nbsp;450-25-25</a></p>
+		        <p><a class="number" href="tel:+79124502525" aria-label="Номер телефона">8&nbsp;912&nbsp;450-25-25</a></p>
 	      </header>
 	      <main class="content">
 	          <h2>Сливочное мороженое</h2>
@@ -77,19 +88,77 @@
 		            <div class="filter-sorting">
                     <form action="https://echo.htmlacademy.ru" method="post">
                         <label for="main-sorting">Сортировка:</label>
-                        <select mane="catalog-sorting" id="main-sorting">
-                            <option value="popylaruty">По популярности</option>
-                            <option value="not expensive">Сначала дорогие</option>
+                        <select name="catalog-sorting" id="main-sorting">
+                            <option value="popylaruty" selected>По популярности</option>
+                            <option value="not-expensive">Сначала дорогие</option>
                             <option value="expensive">Сначала дорогие</option>
-                            <option value="fat content">По жирности</option>
+                            <option value="fat-content">По жирности</option>
                         </select>
                         <label for="main-range">Цена: 100 руб. - 500 руб.</label>
-                        <input type="range" name="main-range" min="100" max="500">
+                        <input type="range" name="price-range" id="main-range" min="100" max="500">
+                        <div class="sorting-group-one">
+                            <p>Жирность:</p>
+                            <div class="group-one-item">
+                                <label>
+                                    <input type="radio" name="fat-content" value=" 0%">
+                                    0%
+                                </label>
+                            </div>
+                            <div class="group-one-item">
+                                <label>
+                                    <input type="radio" name="fat-content" value="до 10%" checked>
+                                    до 10%
+                                </label>
+                            </div>
+                            <div class="group-one-item">
+                                <label>
+                                    <input type="radio" name="fat-content" value="до 30%">
+                                    до 30%
+                                </label>
+                            </div>
+                            <div class="group-one-item">
+                                <label>
+                                    <input type="radio" name="fat-content" value="выше 30%">
+                                    выше 30%
+                                </label>
+                            </div>
+                        </div>
+                        <div class="sorting-group-two">
+                            <p>Наполнители:</p>
+                            <div class="group-two-item">
+                                <label>
+                                    <input type="checkbox" name="chocolate" checked>
+                                    шоколадные
+                                </label>
+                            </div>
+                            <div class="group-two-item">
+                                <label>
+                                    <input type="checkbox" name="sugar-powder" checked>
+                                    сахарные присыпки
+                                </label>
+                            </div>
+                            <div class="group-two-item">
+                                <label>
+                                    <input type="checkbox" name="fruit">
+                                    фрукты
+                                </label>
+                            </div>
+                            <div class="group-two-item">
+                                <label>
+                                    <input type="checkbox" name="syrups" >
+                                    сиропы
+                                </label>
+                            </div>
+                            <div class="group-two-item">
+                                <label>
+                                    <input type="checkbox" name="jam">
+                                    джемы
+                                </label>
+                            </div>
+                        </div>
+                        <input type="button" value="Применить">
                     </form>
 			          </div>
-                <div class="filter-filling">
-			              <!--Место формы-->
-                </div>
  		        </section>
 		        <section class="main-price">
 		            <h2 class="visually-hidden">Прайс-лист</h2>
@@ -220,8 +289,8 @@
             <ul class="footer-information-list">
       		      <li>Для поставщиков</li>
       		      <li><a href="about-prodaction.html">О производстве</a></li>
-      		 </ul>
-      		 <ul class="footer-document-list">
+      		  </ul>
+      		  <ul class="footer-document-list">
       		     <li>Наши документы</li>
       		     <li><a href="environmental-standards.html">Экологические стандарты</a></li>
       		  </ul>
