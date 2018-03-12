@@ -15,7 +15,7 @@
                     <li class="main-navigation-items"><a href="gllacy-catalog.html">Каталог</a>
                         <ul class="hidden-menu">
                             <li><a href="#Novelty">Новинки</a></li>
-                            <li><a href="#Creamy">Сливочное</a></li>
+                            <li><a href="gllacy-catalog.html">Сливочное</a></li>
                             <li><a href="#Scherbet">Щербеты</a></li>
                             <li><a href="#Fruit-ace">Фруктовый лед</a></li>
                             <li><a href="#Melorin">Мелорин</a></li>
@@ -27,10 +27,31 @@
             </nav>
             <ul class="right-nav-case">
                 <li class="right-nav-case-item">
-                    <a class="search">Поиск</a>
+                    <a class="search" aria-label="Поиск по сайту"></a>
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                        <label class="visually-hidden" for="main-search">Поиск по сайту</label>
+                        <input type="search" name="general-search" id="main-search" placeholder="Что ищем?">
+                    </form>
                 </li>
                 <li class="rigth-nav-case-item">
                     <a class="enter">Вход</a>
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                        <p>
+                            <label class="visually-hidden" for="main-enter-email">Электронная почта</label>
+                            <input type="email" name="enter-email" id="main-enter-email" placeholder="Электронная почта">
+                        </p>
+                        <p>
+                            <label class="visually-hidden" for="enter-password">Пароль</label>
+                            <input type="password" name="main-password" id="enter-password" placeholder="Пароль">
+                        </p>
+                        <p>
+                            <input class="main-enter-button" type="submit" value="Войти">
+                        </p>
+                        <ul>
+                            <li><a href="forgot-password.html">Забыли пароль</a></li>
+                            <li><a href="news-refistration.html">Новая регистрация</a></li>
+                        </ul>
+                    </form>
                 </li>
                 <li class="right-nav-case-item">
                     <a class="cart">Корзина</a>
@@ -43,7 +64,7 @@
 	            <section class="main-slider">
 		              <h2>Крем брюле и пломбир с малиновым джемом</h2>
 			            <img src="image/acecream.jpeg" width="450" height="450" alt="мороженое Gllacy">
-			            <button class="site-button">Давайте оба!</button>
+			            <a class="site-button">Давайте оба!</a>
 		          </section>
 		          <section class="main-baner">
 		              <h2 class="visually-hidden">Главынй банер</h2>
@@ -131,16 +152,16 @@
 	            <div class="main-social">
 		              <ul class="main-social-list">
 			                <li class="main-social-item">
-				                  <a href="http://twitter.com">Твиттер</a>
+				                  <a href="http://twitter.com" aria-label="Твиттер">Твиттер</a>
 				              </li>
 				              <li class="main-social-item">
-				                  <a href="http://instagram.com">Инстанрам</a>
+				                  <a href="http://instagram.com" aria-label="Инстаграм">Инстанрам</a>
 				              </li>
 				              <li class="main-social-item">
-				                  <a href="http://facebook.com">Фейсбук</a>
+				                  <a href="http://facebook.com" aria-label="Фейсбук">Фейсбук</a>
 				              </li>
 				              <li class="main-social-item">
-				                  <a href="http://vk.com">Вконтакте</a>
+				                  <a href="http://vk.com" aria-label="ВКонтакте">Вконтакте</a>
 				              </li>
 			            </ul>
 		          </div>
@@ -156,9 +177,23 @@
 	        </footer>
 	        <section class="modal-feedback">
 	            <h2 class="visually-hidden">Форма обратной связи</h2>
-		          <p>Мы обязательно вам ответим</p>
-		          <!--Тут будет форма-->
-		          <a class="button-site button-modal-feedback" href="feedback.php">Отправить</a>
+		          <p>Мы обязательно вам ответим!</p>
+              <form class="main-form-feedback" action="https://echo.htmlacademy.ru" method="post">
+                  <p>
+                      <label class="visually-hidden" for="feedback-name">Ваше имя</label>
+                      <input type="text" name="form-name" id="feedback-name" placeholder="Как вас зовут?">
+                  </p>
+                  <p>
+                      <label class="visually-hidden" for="main-form-email">Электронная почта</label>
+                      <input type="email" name="form-email" id="main-form-email" placeholder="Ваша почта для ответа?">
+                  </p>
+                  <p>
+                      <label class="visually-hidden" for="form-comments">Комментарий</label>
+                      <textarea name="comments" id="form-comments" placeholder="Напишите что-нибудь..."></textarea>
+                  </p>
+                  <input type="submit" value="Отправить">
+              </form>
+		          <button class="button-site button-modal-feedback" aria-label="Закрыть форму обратной связи"></button>
 	        </section>
       </body>
 </html>

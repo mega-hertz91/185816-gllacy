@@ -12,7 +12,7 @@
 		        </a>
 	          <nav class="main-navigation">
 		            <ul class="main-navigation-list">
-			              <li class="main-navigation-items"><a href="#">Каталог</a>
+			              <li class="main-navigation-items"><a href="index.html">Каталог</a>
 				                <ul class="hidden-menu">
 					                  <li><a href="#Novelty">Новинки</a></li>
 						                <li><a href="#Creamy">Сливочное</a></li>
@@ -27,17 +27,52 @@
 		        </nav>
 		        <ul class="right-nav-case">
 		            <li class="right-nav-case-item">
-			              <a class="search">Поиск</a>
+			              <a class="search" aria-label="Поиск по сайту"></a>
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                        <label class="visually-hidden" for="main-search">Поиск по сайту</label>
+                        <input type="search" name="general-search" id="main-search" placeholder="Что ищем?">
+                    </form>
 			          </li>
 			          <li class="rigth-nav-case-item">
 			              <a class="enter">Вход</a>
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                        <p>
+                            <label class="visually-hidden" for="main-enter-email">Электронная почта</label>
+                            <input type="email" name="enter-email" id="main-enter-email" placeholder="Электронная почта">
+                        </p>
+                        <p>
+                            <label class="visually-hidden" for="enter-password">Пароль</label>
+                            <input type="password" name="main-password" id="enter-password" placeholder="Пароль">
+                        </p>
+                        <p>
+                            <input class="main-enter-button" type="submit" value="Войти">
+                        </p>
+                        <ul>
+                            <li><a href="forgot-password.html"></a>Забыли пароль</li>
+                            <li><a href="news-refistration.html">Новая регистрация</a></li>
+                        </ul>
+                    </form>
 			          </li>
 			          <li class="right-nav-case-item">
-			              <a class="cart">Корзина</a>
+			              <a class="cart">2 товара</a>
+                    <div class="main-cart">
+                        <ul>
+                            <li>Пломбир с апельсиновым джемом</li>
+                            <li>1,5&nbsp;х&nbsp;200руб.</li>
+                            <li>300&nbsp;руб.</li>
+                        </ul>
+                        <ul>
+                            <li>Клубничный пломбир с присыпкой из белого шоколада</li>
+                            <li>1,5&nbsp;х&nbsp;300руб.</li>
+                            <li>450&nbsp;руб.</li>
+                        </ul>
+                    </div>
+                    <p></p>
+                    <a class="site-button cart-button" href="checkout.php">Оформить заказ</a>
 			          </li>
             </ul>
             <p>С 10 до 20, ежедневно<br>
-		        <p><a class="number" href="tel:+79124502525">8&nbsp;912&nbsp;450-25-25</a></p>
+		        <p><a class="number" href="tel:+79124502525" aria-label="Номер телефона">8&nbsp;912&nbsp;450-25-25</a></p>
 	      </header>
 	      <main class="content">
 	          <h2>Сливочное мороженое</h2>
@@ -51,11 +86,79 @@
 		        <section class="main-filter">
 		            <h2 class="visually-hidden">Главный фильтр</h2>
 		            <div class="filter-sorting">
-                     <!--Место формы-->
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                        <label for="main-sorting">Сортировка:</label>
+                        <select name="catalog-sorting" id="main-sorting">
+                            <option value="popylaruty" selected>По популярности</option>
+                            <option value="not-expensive">Сначала дорогие</option>
+                            <option value="expensive">Сначала дорогие</option>
+                            <option value="fat-content">По жирности</option>
+                        </select>
+                        <label for="main-range">Цена: 100 руб. - 500 руб.</label>
+                        <input type="range" name="price-range" id="main-range" min="100" max="500">
+                        <div class="sorting-group-one">
+                            <p>Жирность:</p>
+                            <div class="group-one-item">
+                                <label>
+                                    <input type="radio" name="fat-content" value=" 0%">
+                                    0%
+                                </label>
+                            </div>
+                            <div class="group-one-item">
+                                <label>
+                                    <input type="radio" name="fat-content" value="до 10%" checked>
+                                    до 10%
+                                </label>
+                            </div>
+                            <div class="group-one-item">
+                                <label>
+                                    <input type="radio" name="fat-content" value="до 30%">
+                                    до 30%
+                                </label>
+                            </div>
+                            <div class="group-one-item">
+                                <label>
+                                    <input type="radio" name="fat-content" value="выше 30%">
+                                    выше 30%
+                                </label>
+                            </div>
+                        </div>
+                        <div class="sorting-group-two">
+                            <p>Наполнители:</p>
+                            <div class="group-two-item">
+                                <label>
+                                    <input type="checkbox" name="chocolate" checked>
+                                    шоколадные
+                                </label>
+                            </div>
+                            <div class="group-two-item">
+                                <label>
+                                    <input type="checkbox" name="sugar-powder" checked>
+                                    сахарные присыпки
+                                </label>
+                            </div>
+                            <div class="group-two-item">
+                                <label>
+                                    <input type="checkbox" name="fruit">
+                                    фрукты
+                                </label>
+                            </div>
+                            <div class="group-two-item">
+                                <label>
+                                    <input type="checkbox" name="syrups" >
+                                    сиропы
+                                </label>
+                            </div>
+                            <div class="group-two-item">
+                                <label>
+                                    <input type="checkbox" name="jam">
+                                    джемы
+                                </label>
+                            </div>
+                        </div>
+                        <input type="submit" value="Применить">
+                    </form>
 			          </div>
-                <div class="filter-filling">
-			              <!--Место формы-->
-                </div>
  		        </section>
 		        <section class="main-price">
 		            <h2 class="visually-hidden">Прайс-лист</h2>
@@ -170,24 +273,24 @@
 	          <div class="main-social">
 		            <ul class="main-social-list">
 			              <li class="main-social-item">
-				                <a href="twitter.com">Твиттер</a>
+				                <a href="http://twitter.com" aria-label="Твиттер">Твиттер</a>
 				            </li>
 				            <li class="main-social-item">
-				                <a href="instagramm.com">Инстанрамм</a>
+				                <a href="http://instagram.com" aria-label="Инстаграм">Инстанрам</a>
 				            </li>
 				            <li class="main-social-item">
-				                <a href="facebook.com">Фейсбук</a>
+				                <a href="http://facebook.com" aria-label="Фейсбук">Фейсбук</a>
 				            </li>
 				            <li class="main-social-item">
-				                <a href="vk.com">Вконтакте</a>
+				                <a href="http://vk.com" aria-label="ВКонтакте">Вконтакте</a>
 				            </li>
 			          </ul>
 		        </div>
             <ul class="footer-information-list">
       		      <li>Для поставщиков</li>
       		      <li><a href="about-prodaction.html">О производстве</a></li>
-      		 </ul>
-      		 <ul class="footer-document-list">
+      		  </ul>
+      		  <ul class="footer-document-list">
       		     <li>Наши документы</li>
       		     <li><a href="environmental-standards.html">Экологические стандарты</a></li>
       		  </ul>
