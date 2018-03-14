@@ -3,10 +3,13 @@
        <head>
            <meta charset="utf-8">
             <title>HTML Academy: Глейси</title>
-	          <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" type="text/css" href="css/normalize.css">
+            <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+	          <link rel="stylesheet" type="text/css" href="css/style.css">
        </head>
       <body>
         <header class="main-header">
+            <div class="wrap-center-head">
             <a class="site-logo">
                 <img src="img/logo.svg" width="200" height="125" alt="Gllacy Shop">
             </a>
@@ -34,7 +37,7 @@
                     </form>
                 </li>
                 <li class="rigth-nav-case-item">
-                    <a class="enter">Вход</a>
+                    <a href="enter.php" class="enter">Вход</a>
                     <form action="https://echo.htmlacademy.ru" method="post">
                         <p>
                             <label class="visually-hidden" for="main-enter-email">Электронная почта</label>
@@ -54,17 +57,19 @@
                     </form>
                 </li>
                 <li class="right-nav-case-item">
-                    <a class="cart">Корзина</a>
+                    <a href="cart.php" class="cart">Корзина</a>
                 </li>
             </ul>
             <p>С 10 до 20, ежедневно<br>
             <p><a class="number" href="tel:+79124502525">8&nbsp;912&nbsp;450-25-25</a></p>
+          </div>
         </header>
-	        <main class="main-content">
+	      <main class="main-content">
+            <div class="wrap-center">
 	            <section class="main-slider">
-		              <h2>Крем брюле и пломбир с малиновым джемом</h2>
-			            <img src="image/acecream.jpeg" width="450" height="450" alt="мороженое Gllacy">
-			            <a class="site-button">Давайте оба!</a>
+		              <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+			            <img src="img/index/layer1.png" width="1045" height="881" alt="мороженое Gllacy">
+			            <a class="button-site" href=#>Давайте оба!</a>
 		          </section>
 		          <section class="main-baner">
 		              <h2 class="visually-hidden">Главынй банер</h2>
@@ -83,55 +88,59 @@
 		              <h2 class="visually-hidden">Прайс лист</h2>
 		              <ul class="main-acecream-list">
 			                <li class="main-acecream-item">
-				                  <img src="img/index/acecream1.jpg" width="150" height="150" alt="Сливочное с апельсиновым джемом">
-					                <p class="main-acecream-price">310&#8381;<span>кг</span></p>
-					                <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+				                  <img src="img/index/acecream1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом">
+					                <p class="main-acecream-price">310&#8381;/<span>кг</span></p>
+					                <a href="acecream.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 				              </li>
 				              <li class="main-acecream-item">
-				                  <img src="img/index/acecream2.jpg" width="150" height="150" alt="Кофейное мороженое">
-					                <p class="main-acecream-price">380&#8381;<span>кг</span></p>
-					                <p>Сливочно-кофейное с кусочками шоколада</p>
+				                  <img src="img/index/acecream2.jpg" width="267" height="267" alt="Кофейное мороженое">
+					                <p class="main-acecream-price">380&#8381;/<span>кг</span></p>
+					                <a href="acecream.html">Сливочно-кофейное с кусочками шоколада</a>
 				              </li>
 				              <li class="main-acecream-item">
-				                  <img src="img/index/acecream3.jpg" width="150" height="150" alt="Клубничное мороженое">
-					                <p class="main-acecream-price">355&#8381;<span>кг</span></p>
-					                <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+				                  <img src="img/index/acecream3.jpg" width="267" height="267" alt="Клубничное мороженое">
+					                <p class="main-acecream-price">355&#8381;/<span>кг</span></p>
+					                <a href="acecream.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
 				              </li>
 				              <li class="main-acecream-item">
-				                  <img src="img/index/acecream4.jpg" width="150" height="150" alt="Клубничное мороженое">
-					                <p class="main-acecream-price">415&#8381;<span>кг</span></p>
-					                <p>Сливочное крем-брюле с карамельной подливкой</p>
+				                  <img src="img/index/acecream4.jpg" width="267" height="267" alt="Клубничное мороженое">
+					                <p class="main-acecream-price">415&#8381;/<span>кг</span></p>
+					                <a href="acecream.html">Сливочное крем-брюле с карамельной подливкой</a>
 				              </li>
 			            </ul>
 		          </section>
 		          <section class="about-us">
-		              <h2 class="visually-hidden">Информация о нас</h2>
+                  <h2 class="visually-hidden">Информация о нас</h2>
 			            <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
-		              <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
-                  </p>
-			            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки
-			               произведены из натурального, экологически чистого сырья.</p>
-                  <p>Пакупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
-                  </p>
-			            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет
-			               сохранить превосходный вкус.</p>
+                  <div class="about-us-wrap">
+		                  <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+                      </p>
+			                <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки
+			                 произведены из натурального, экологически чистого сырья.</p>
+                      <p>Пакупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+                      </p>
+			                <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет
+			                 сохранить превосходный вкус.</p>
+                  </div>
 		          </section>
 		          <section class="news-blog">
 		              <h2 class="visually-hidden">Новости блога</h2>
 		              <article class="news-blog-last-news">
 			                <h3 class="visually-hidden">Последние новости</h3>
-			                <b>Новое в нашем блоге</b>
+			                <p>Новое в нашем блоге</p>
 				              <a class="news-blog" href="blog.news1.html">10 способов сервировки фруктовых щербетов к столу</a>
 			            </article>
 			            <div class="main-dispach">
+                    <div class="main-dispach-wrap">
 			                <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
 				                 вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
 				              </p>
 				              <!--Место формы-->
 			            </div>
+                </div>
 		          </section>
 		          <section class="main-map">
-		              <h2>Наш адрес</h2>
+		              <h2 class="visually-hidden">Наш адрес</h2>
 		              <div class="main-map-adress">
 			                <!--Место для карты-->
 			            </div>
@@ -146,9 +155,11 @@
 				             </p>
 				             <a class="button-site button-main-feedback" href="feedback/feedback-form.php">Форма обратной связи</a>
 			            </div>
-		          </section>
+              </section>
+            </div>
 	        </main>
 	        <footer class="main-footer">
+            <div class="wrap-center-foo">
 	            <div class="main-social">
 		              <ul class="main-social-list">
 			                <li class="main-social-item">
@@ -174,7 +185,8 @@
 		              <li><a href="environmental-standards.html">Экологические стандарты</a></li>
 		          </ul>
 		              <p class="copyright-footer">Сделано в <a href="http://htmlacademy.ru">HTML Academy &copy; 2017</a></p>
-	        </footer>
+            </div>
+          </footer>
 	        <section class="modal-feedback">
 	            <h2 class="visually-hidden">Форма обратной связи</h2>
 		          <p>Мы обязательно вам ответим!</p>
@@ -193,7 +205,7 @@
                   </p>
                   <input type="submit" value="Отправить">
               </form>
-		          <button class="button-site button-modal-feedback" aria-label="Закрыть форму обратной связи"></button>
+		          <button class="button-modal-feedback" aria-label="Закрыть форму обратной связи"></button>
 	        </section>
       </body>
 </html>
