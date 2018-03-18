@@ -46,6 +46,8 @@ a {
 /*------Header-------*/
 .wrap-center-head {
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 .main-navigation-list,
 .hidden-menu,
@@ -55,11 +57,23 @@ a {
 	padding: 0;
 	margin: 0;
 }
+.main-navigation,
+.right-nav-case {
+  margin-top: 30px;
+}
+.site-logo {
+  margin-top: 10px;
+  height: 66px;
+}
+.wrap-center-head {
+  display: flex;
+}
 .main-navigation-list {
 	display: flex;
 }
 .right-nav-case {
   display: flex;
+  margin-left: auto;
 }
 
 .main-navigation-items > a:hover,
@@ -90,29 +104,43 @@ a {
 }
 /*-------Main-content-----*/
 .main-slider {
-  width: 100%;
+  width: 1200px;
   height: 490px;
+  margin: auto;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  position: relative;
 }
-
 .main-slider a {
   text-decoration: none;
   font-size: 32px;
   line-height: 44px;
 }
-
 .main-slider h2 {
 	font-size: 60px;
 	line-height: 60.35px;
   text-align: center;
   width: 670px;
 }
+.main-number {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  text-align: right;
+}
+.main-number p {
+  margin: -10px;
+  padding: 0px;
+}
 .main-baner {
 	display: flex;
-  justify-content: space-around;
+  width: 1150px;
+  margin: auto;
+  margin-bottom: 40px;
+  justify-content: space-between;
 }
 .main-baner h3 {
 	font-size: 35px;
@@ -126,7 +154,7 @@ a {
 .baner-sale-jam,
 .baner-sale-chocolate {
 	width: 560px;
-	height: 230px;
+	min-height: 230px;
   border-radius: 15px;
 }
 .baner-sale-jam a,
@@ -150,7 +178,21 @@ a {
 	margin: 0;
 	padding: 0;
 	display: flex;
+  width: 1150px;
+  margin: auto;
+  margin-bottom: 40px;
 	justify-content: space-between;
+}
+.main-acecream-item {
+  position: relative;
+  width: 267px;
+  min-heigth: 330px;
+  text-align: center;
+}
+.main-acecream-item .main-acecream-price {
+  position: absolute;
+  bottom: 25px;
+  left: 0px;
 }
 .main-acecream img {
 	border-radius: 50%;
@@ -171,6 +213,10 @@ a {
 	background-color: #e8dcc2;
 	background-image: url("../img/index/wafer.jpg");
 	color: black;
+  width: 1150px;
+  margin: auto;
+  margin-bottom: 40px;
+  border-radius: 15px;
 }
 .about-us-wrap {
 	display: flex;
@@ -182,7 +228,10 @@ a {
 }
 .news-blog {
 	display: flex;
-  justify-content: space-around;
+  width: 1150px;
+  margin: auto;
+  margin-bottom: 40px;
+  justify-content: space-between;
 }
 .news-blog-last-news {
 	background-color: white;
@@ -191,7 +240,7 @@ a {
 	background-position: center;
 	color: black;
 	width: 560px;
-	height: 230px;
+	min-height: 220px;
   border-radius: 15px;
 }
 .news-blog-last-news a {
@@ -202,10 +251,6 @@ a {
 .news-blog-last-news p {
 	color: #5a5a5a;
 }
-.main-dispach {
-	width: 560px;
-	height: 230px;
-}
 .main-dispach p {
 	color: #5a5a5a;
 	font-weight: 500;
@@ -215,22 +260,28 @@ a {
   background-image: repeating-linear-gradient(140deg,white 2px,#92cdff 2px, #92cdff 10px, white 10px, white 20px,
   #fe9e90 20px, #fe9e90 30px, white 30px, white 40px );
   width: 560px;
-  height: 230px;
+  height: 220px;
   border-radius: 15px;
 }
 .main-dispach-wrap {
   width: 550px;
-  height: 220px;
+  height: 210px;
   background-color: #f8f7f4;
   margin: auto;
+  border-radius: 15px;
 }
 .main-map-adress {
-  width: 100%;
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 40px;
   height: 430px;
   background-image: url("../img/index/index-map.jpg");
 }
 .main-feedback {
   background-color: white;
+  width: 300px;
+  min-height: 305px;
+  border-radius: 15px;
 }
 .main-feedback p {
 	color: #5a5a5a;
@@ -246,12 +297,40 @@ a {
 /*-----Footer------*/
 .wrap-center-foo {
   display: flex;
+  width: 1150px;
+  min-height: 40px;
+  margin:auto;
 }
 .main-social-list,
 .footer-information-list,
 .footer-document-list {
 	list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 267px;
 }
+.footer-information-list {
+  text-align: right;
+  padding-right: 25px;
+}
+.footer-document-list {
+  padding-left: 5px;
+}
+.copyright-footer {
+  margin-left: auto;
+}
+.main-social-list {
+  display: flex;
+}
+.main-social-list li {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-document-list {
+
+}
+
 /*--------Modal-------*/
 .modal-feedback p {
 	color: black;
