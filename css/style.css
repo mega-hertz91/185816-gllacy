@@ -132,6 +132,8 @@ a {
   text-align: right;
 }
 .main-number p {
+  font-size: 14px;
+  line-height: 16px;
   margin: -10px;
   padding: 0px;
 }
@@ -186,12 +188,14 @@ a {
 .main-acecream-item {
   position: relative;
   width: 267px;
-  min-heigth: 330px;
+  min-heigth: 217px;
   text-align: center;
 }
 .main-acecream-item .main-acecream-price {
   position: absolute;
-  bottom: 25px;
+  margin: 0;
+  padding: 0;
+  bottom: 75px;
   left: 0px;
 }
 .main-acecream img {
@@ -273,7 +277,6 @@ a {
 .main-map-adress {
   width: 1200px;
   margin: auto;
-  margin-bottom: 40px;
   height: 430px;
   background-image: url("../img/index/index-map.jpg");
 }
@@ -300,6 +303,7 @@ a {
   width: 1150px;
   min-height: 40px;
   margin:auto;
+  margin-top: 40px;
 }
 .main-social-list,
 .footer-information-list,
@@ -353,12 +357,9 @@ a {
 	background-color: #849d8f;
   background-image: none;
 }
-.main-price-item {
-  width: 270px;
-  height: 320px;
-}
-.main-price-item img {
-  border-radius: 50%;
+.main-page-navigation {
+  display: flex;
+  align-items: flex-end;
 }
 .page-navigation-list {
   list-style: none;
@@ -377,6 +378,19 @@ a {
 }
 .page-navigation-item:last-of-type a {
   text-decoration: none;
+}
+.catalog-number {
+  margin-left: auto;
+  text-align: right;
+}
+.catalog-number p {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+  padding: 0;
+}
+.catalog-number p:first-of-type {
+  margin-bottom: 10px;
 }
 .main-cart-list {
   color: black;
@@ -398,6 +412,9 @@ li .main-cart-span {
 .main-cart{
   background-color: #f8f7f4;
 }
+.main-filter {
+  margin-bottom: 40px;
+}
 .filter-sorting {
   font-weight: 500;
   font-size: 14px;
@@ -414,10 +431,6 @@ li .main-cart-span {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.main-price-list {
-  width: 267px;
-  min-height: 520px;
-}
 .main-price-list p {
   font-size: 45px;
   line-height: 13px;
@@ -425,9 +438,31 @@ li .main-cart-span {
 .main-price-list a {
   font-weight: 500;
 }
+
+.main-price-item {
+  position: relative;
+  width: 270px;
+  height: 317px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.main-price-item p {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0px;
+  bottom: 75px;
+}
+.main-price-item img {
+  border-radius: 50%;
+}
+.main-paginator {
+  width: 100%;
+  margin-top: 80px;
+}
 .main-paginator-list {
   display: flex;
-  margin-left: auto;
+  justify-content: flex-end;
   list-style: none;
   margin: 0;
   padding: 0;
