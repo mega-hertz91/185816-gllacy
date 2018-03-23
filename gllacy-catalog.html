@@ -8,77 +8,82 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body class="gl-catalog">
-        <header class="main-header">
+      <header class="main-header">
           <div class="wrap-center-head">
-            <a class="site-logo" href="index.html">
-                <img src="img/logo.svg" width="155" height="70" alt="Gllacy Shop">
-            </a>
-            <nav class="main-navigation">
-                <ul class="main-navigation-list">
-                    <li class="main-navigation-items"><a>Каталог</a>
-                      <ul class="hidden-menu">
-                            <li><a href="#Novelty">Новинки</a></li>
-                            <li><a>Сливочное</a></li>
-                            <li><a href="#Scherbet">Щербеты</a></li>
-                            <li><a href="#Fruit-ace">Фруктовый лед</a></li>
-                            <li><a href="#Melorin">Мелорин</a></li>
-                      </ul>
-                    </li>
-                    <li class="main-navigation-items"><a href="delivery.php">Доставка и оплата</a></li>
-                    <li class="main-navigation-items"><a href="about-us.html">О компании</a></li>
-                </ul>
-            </nav>
-            <ul class="right-nav-case">
-                <li class="right-nav-case-item">
-                    <a class="search" aria-label="Поиск по сайту"></a>
-                    <form action="https://echo.htmlacademy.ru" method="post">
-                        <label class="visually-hidden" for="main-search">Поиск по сайту</label>
-                        <input type="search" name="general-search" id="main-search" placeholder="Что ищем?">
-                    </form>
-                </li>
-                <li class="right-nav-case-item">
-                    <a class="enter">Вход</a>
-                    <form class="visually-hidden" action="https://echo.htmlacademy.ru" method="post">
-                        <p>
-                            <label for="main-enter-email">Электронная почта</label>
-                            <input type="email" name="enter-email" id="main-enter-email" placeholder="Электронная почта">
-                        </p>
-                        <p>
-                            <label for="enter-password">Пароль</label>
-                            <input type="password" name="main-password" id="enter-password" placeholder="Пароль">
-                        </p>
-                        <p>
-                            <input class="main-enter-button" type="submit" value="Войти">
-                        </p>
-                        <ul>
-                            <li><a href="forgot-password.html"></a>Забыли пароль</li>
-                            <li><a href="news-refistration.html">Новая регистрация</a></li>
-                        </ul>
-                    </form>
-                </li>
-                <li class="right-nav-case-item">
-                  <a class="cart">Пусто</a>
-                  <div class="visually-hidden main-cart">
+              <a class="site-logo" href="index.html">
+                  <img src="img/logo.svg" width="155" height="70" alt="Gllacy Shop">
+              </a>
+              <nav class="main-navigation">
+                  <ul class="main-navigation-list">
+                      <li class="main-navigation-items"><a href="gllacy-catalog.html">Каталог</a>
+                          <ul class="hidden-menu">
+                              <li class="hidden-menu-item"><a href="#Novelty">Новинки</a></li>
+                              <li class="hidden-menu-item"><a href="gllacy-catalog.html">Сливочное</a></li>
+                              <li class="hidden-menu-item"><a href="#Scherbet">Щербеты</a></li>
+                              <li class="hidden-menu-item"><a href="#Fruit-ace">Фруктовый лед</a></li>
+                              <li class="hidden-menu-item"><a href="#Melorin">Мелорин</a></li>
+                          </ul>
+                      </li>
+                      <li class="main-navigation-items"><a href="delivery.php">Доставка и оплата</a></li>
+                      <li class="main-navigation-items"><a href="about-us.html">О компании</a></li>
+                  </ul>
+              </nav>
+             <ul class="right-nav-case">
+                  <li class="right-nav-case-item">
+                      <a class="search" href="search.php" aria-label="Поиск по сайту"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg></a>
+                      <div class="search-wrap">
+                      <form action="https://echo.htmlacademy.ru" method="post">
+                          <label class="visually-hidden" for="main-search">Поиск по сайту</label>
+                          <input type="search" name="general-search" id="main-search" placeholder="Что ищем?">
+                      </form>
+                    </div>
+                  </li>
+                  <li class="right-nav-case-item">
+                      <a class="enter" href="enter.php"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 21 19"><g fill="#ffffff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>Вход</a>
+                      <div class="hidden-login">
+                        <div class="hidden-login-fill">
+                          <form  action="https://echo.htmlacademy.ru" method="post">
+                              <p>
+                                  <label class="visually-hidden" for="main-enter-email">Электронная почта</label>
+                                  <input type="email" name="enter-email" id="main-enter-email" placeholder="Электронная почта">
+                              </p>
+                              <p>
+                                  <label class="visually-hidden" for="enter-password">Пароль</label>
+                                  <input type="password" name="main-password" id="enter-password" placeholder="Пароль">
+                              </p>
+                              <button class="main-enter-button button-site" type="submit">Войти</button>
+                              <ul class="login-list">
+                                  <li><a href="forgot-password.html">Забыли пароль</a></li>
+                                  <li><a href="news-refistration.html">Новая регистрация</a></li>
+                              </ul>
+                          </form>
+                        </div>
+                      </div>
+                  </li>
+                  <li class="right-nav-case-item">
+                      <a class="cart" href="cart.php"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 21 20"><g fill="#FFF"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>2 товара</a>
+                      <div class="main-cart">
+                        <div class="main-cart-fill">
                         <ul class="main-cart-list">
-                            <li>Пломбир с апельсиновым джемом</li>
-                            <li>1,5&nbsp;х&nbsp;<span class="main-cart-span">200руб.</span></li>
-                            <li>300&nbsp;руб.</li>
+                            <li class="main-cart-item">Пломбир с апельсиновым джемом</li>
+                            <li class="main-cart-item">1,5&nbsp;х&nbsp;<span class="main-cart-span">200руб.</span></li>
+                            <li class="main-cart-item">300&nbsp;руб.</li>
                         </ul>
                         <ul class="main-cart-list">
-                            <li>Клубничный пломбир с присыпкой из белого шоколада</li>
-                            <li>1,5&nbsp;х&nbsp;<span class="main-cart-span">300руб.</span></li>
-                            <li>450&nbsp;руб.</li>
+                            <li class="main-cart-item">Клубничный пломбир с присыпкой из белого шоколада</li>
+                            <li class="main-cart-item">1,5&nbsp;х&nbsp;<span class="main-cart-span">300руб.</span></li>
+                            <li class="main-cart-item">450&nbsp;руб.</li>
                         </ul>
-                      <p>Итого</p>
-                      <a class="button-site cart-button" href="checkout.php">Оформить заказ</a>
-                </div>
-              </li>
-            </ul>
+                      </div>
+                        <p>Итого:</p>
+                        <a class="button-site cart-button" href="checkout.php">Оформить заказ</a>
+                      </div>
+                  </li>
+              </ul>
           </div>
-        </header>
+      </header>
         <main class="content">
           <div class="wrap-center">
-
             <div class="main-page-navigation">
                 <ul class="page-navigation-list">
                     <li class="page-navigation-item"><a href="index.html">Главная</a></li>

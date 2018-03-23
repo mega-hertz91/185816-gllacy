@@ -167,7 +167,7 @@ a {
 .right-nav-case-item:first-of-type:hover .search-wrap,
 .right-nav-case-item:first-of-type:focus .search-wrap {
   display: block;
-}  
+}
 .right-nav-case-item:nth-of-type(2):hover .hidden-login,
 .right-nav-case-item:nth-of-type(2):focus .hidden-login {
   display: block;
@@ -188,7 +188,7 @@ a {
   top: 35px;
   left: -170px;
   width: 280px;
-  height: 215px;
+  min-height: 215px;
   background-color: #f8f7f4;
   border-radius: 5px;
 }
@@ -269,6 +269,7 @@ a {
 .search-wrap,
 .hidden-login {
   display: none;
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.4);
 }
 .search-wrap {
   left: -300px;
@@ -784,25 +785,74 @@ a {
 .catalog-number p:first-of-type {
   margin-bottom: 10px;
 }
+.main-cart {
+  position: absolute;
+  width: 540px;
+  height: 250px;
+  left: -385px;
+  top: 34px;
+
+  background-color: #f8f7f4;
+  border-radius: 5px;
+
+  display: block;
+}
+.main-cart-fill {
+  width: 514px;
+  height: 114px;
+  margin: 20px 13px;
+  border-bottom: 1px solid #cacac7;
+}
 .main-cart-list {
+  position: relative;
   color: black;
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 20px;
+  min-height: 35px;
+
+  display: flex;
 }
-.main-cart-list li {
+.main-cart-item:first-of-type {
+  width: 217px;
+  margin-left: 75px;
+}
+.main-cart-item::before {
+  position: absolute;
+  top: -10px;
+  left: 26px;
+  content: "";
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.main-cart-list:first-of-type .main-cart-item:first-of-type::before {
+  background-image: url("../img/gllacy-catalog/block1.jpg");
+  background-size: cover;
+}
+.main-cart-list:nth-of-type(2) .main-cart-item:first-of-type::before {
+  background-image: url("../img/gllacy-catalog/block3.jpg");
+  background-size: cover;
+}
+.main-cart-item:nth-of-type(2) {
+  width: 115px;
+  margin-left: 30px;
+}
+.main-cart-item:nth-of-type(3) {
+  width: 65px;
+  margin-left: 14px;
+}
+.main-cart-list .main-cart-item {
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
 }
-li .main-cart-span {
+.main-cart-item .main-cart-span {
   color: #5a5a5a;
 }
 .main-cart p {
   color: black;
-}
-.main-cart{
-  background-color: #f8f7f4;
 }
 .main-filter {
   margin-bottom: 40px;
