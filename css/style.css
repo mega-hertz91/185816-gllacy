@@ -87,7 +87,7 @@ a {
 .hidden-menu {
   display: none;
   position: absolute;
-  bottom: -190px;
+  bottom: -186px;
   width: 145px;
   min-height: 170px;
   background-color: #f8f7f4;
@@ -764,6 +764,19 @@ a {
   display: flex;
   font-weight: 400;
   font-size: 14px;
+}
+.page-navigation-item {
+  position: relative;
+  margin-right: 15px;
+}
+.page-navigation-item:not(:last-of-type)::after {
+  content: "»";
+  position: absolute;
+  font-size: 18px;
+  top: -2px;
+  right: -13px;
+  width: 10px;
+  height: 10px;
 }
 .page-navigation-item a:hover,
 .page-navigation-item a:focus {
