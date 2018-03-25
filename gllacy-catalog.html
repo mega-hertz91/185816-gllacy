@@ -99,22 +99,33 @@
                     <p><a class="number" href="tel:+79124502525" aria-label="Номер телефона">8&nbsp;912&nbsp;450-25-25</a></p>
                 </div>
             </div>
-            <h2>Сливочное мороженое</h2>
+            <h2 class="caption">Сливочное мороженое</h2>
             <section class="main-filter">
                 <h2 class="visually-hidden">Главный фильтр</h2>
                 <div class="filter-sorting">
                     <form action="https://echo.htmlacademy.ru" method="post">
-                        <label for="main-sorting">Сортировка:</label>
-                        <select name="catalog-sorting" id="main-sorting">
-                            <option value="popylaruty" selected>По популярности</option>
-                            <option value="not-expensive">Сначала дорогие</option>
-                            <option value="expensive">Сначала дорогие</option>
-                            <option value="fat-content">По жирности</option>
-                        </select>
-                        <label for="main-range">Цена: 100 руб. - 500 руб.</label>
-                        <input type="range" name="price-range" id="main-range" min="100" max="500">
+                        <div class="sorting-popular-wrap">
+                            <label for="main-sorting">Сортировка:</label>
+                            <select class="sorting-select" name="catalog-sorting" id="main-sorting">
+                                <option value="popylaruty" selected>По популярности</option>
+                                <option value="not-expensive">Сначала дорогие</option>
+                                <option value="expensive">Сначала дорогие</option>
+                                <option value="fat-content">По жирности</option>
+                            </select>
+                        </div>
+                        <div class="scroll-wrap">
+                            <p>Цена:&nbsp;100&nbsp;руб.&nbsp;-&nbsp;500&nbsp;руб.</p>
+                          <div class="scroll-fill">
+                            <div class="skroll">
+                                <button class="skroll-left" type="button"></button>
+                                <button class="skroll-right" type="button"></button>
+                                <div class="skroll-field"></div>
+                            </div>
+                          </div>
+                        </div>
                         <div class="sorting-group-one">
                             <p>Жирность:</p>
+                            <div class="group-one-item-wrap">
                             <div class="group-one-item">
                                 <label>
                                     <input type="radio" name="fat-content" value=" 0%">
@@ -140,8 +151,10 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="sorting-group-two">
+                      </div>
+                      <div class="sorting-group-two">
                             <p>Наполнители:</p>
+                            <div class="group-two-item-wrap">
                             <div class="group-two-item">
                                 <label>
                                     <input type="checkbox" name="chocolate" checked>
@@ -172,8 +185,9 @@
                                     джемы
                                 </label>
                             </div>
+                          </div>
                         </div>
-                        <input type="submit" value="Применить">
+                        <button class="filter-button" type="submit">Применить</button>
                     </form>
                 </div>
             </section>

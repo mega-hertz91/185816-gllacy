@@ -767,14 +767,14 @@ a {
 }
 .page-navigation-item {
   position: relative;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 .page-navigation-item:not(:last-of-type)::after {
   content: "»";
   position: absolute;
-  font-size: 18px;
+  font-size: 16px;
   top: -2px;
-  right: -13px;
+  right: -16px;
   width: 10px;
   height: 10px;
 }
@@ -917,19 +917,122 @@ a {
 .cart-close::after {
   transform: rotate(-45deg);
 }
+.caption {
+  font-size: 35px;
+  line-height: 41px;
+  margin: 0;
+  padding: 0;
+}
 .main-filter {
   margin-bottom: 40px;
+  width: 880px;
 }
-.filter-sorting {
+.filter-sorting form {
+  display: flex;
+  flex-wrap: wrap;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
 }
-.filter-sorting .sorting-group-one,
-.filter-sorting .sorting-group-two {
+.skroll {
+  width: 180px;
+  background: #d1dad3;
+  height: 5px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  position: relative;
+}
+.skroll-left,
+.skroll-right {
+  position: absolute;
+  display: block;
+  width: 20px;
+  background: #d1dad3;
+  border: none;
+  height: 20px;
+  box-shadow: inset 0 0 0 7.5px white;
+  border-radius: 50%;
+  top: -8px;
+  z-index: 1;
+  cursor: pointer;
+}
+.skroll-left {
+  left: 35px;
+}
+.skroll-right {
+  right: 37px;
+}
+.skroll-field {
+  width: 70px;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  left: 54px;
+}
+.filter-sorting .group-one-item-wrap,
+.filter-sorting .group-two-item-wrap,
+.scroll-fill {
   display: flex;
+  flex-wrap: wrap;
   font-size: 16px;
   line-height: 18px;
+  padding: 10px 15px;
+  background-color: #aabcb2;
+  border-radius: 25px;
+  min-width: 25px;
+}
+.scroll-fill {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.group-one-item,
+.group-two-item {
+  margin-left: 30px;
+}
+.sorting-popular-wrap .sorting-select {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 50px;
+  background-color: #aabcb2;
+  border-radius: 25px;
+  min-width: 25px;
+  margin-right: 15px;
+  border: none;
+  cursor: pointer;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+}
+.sorting-group-one p,
+.sorting-group-two p,
+.scroll-wrap p,
+.sorting-popular-wrap label {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+.filter-button {
+  background-color: #aabcb2;
+  border-radius: 25px;
+  padding: 0 30px;
+  margin-top: 21px;
+  margin-left: auto;
+  min-width: 25px;
+  height: 37px;
+  border: 2px solid white;
+  cursor: pointer;
+  box-shadow: none;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
 }
 .main-price {
   display: flex;
