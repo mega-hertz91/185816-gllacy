@@ -93,6 +93,7 @@ a {
   background-color: #f8f7f4;
   border-radius: 5px;
   z-index: 2;
+  overflow: hidden;
 }
 .main-navigation-items:hover .hidden-menu,
 .main-navigation-items:focus .hidden-menu {
@@ -978,7 +979,7 @@ a {
   font-size: 16px;
   line-height: 18px;
   padding: 10px 15px;
-  background-color: #aabcb2;
+  background-color: #abbcb2;
   border-radius: 25px;
   min-width: 25px;
 }
@@ -986,9 +987,82 @@ a {
   margin-right: 15px;
   margin-bottom: 15px;
 }
-.group-one-item,
+.group-one-item {
+  margin-left: 40px;
+  padding-right: 10px;
+  position: relative;
+}
 .group-two-item {
-  margin-left: 30px;
+  margin-left: 40px;
+  padding-right: 10px;
+  position: relative;
+}
+.group-one-item label,
+.group-two-item label {
+  cursor: pointer;
+}
+.group-one-item input[type="radio"] {
+  display: none;
+}
+.group-one-item input[type="radio"] + .checkbox-indicator {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  border: 4px solid white;
+  border-radius: 50%;
+  left: -38px;
+  top: -4px;
+  cursor: pointer;
+}
+.group-one-item input[type="radio"]:checked + .checkbox-indicator::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 4px;
+  left: 4px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.group-one-item input[type="radio"]:focus + .checkbox-indicator {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+.group-two-item input[type="checkbox"] {
+  display: none;
+}
+.group-two-item input[type="checkbox"] + .checkbox {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  border: 2px solid white;
+  border-radius: 2px;
+  left: -35px;
+  top: -2px;
+  cursor: pointer;
+}
+.group-two-item input[type="checkbox"]:checked + .checkbox::before,
+.group-two-item input[type="checkbox"]:checked + .checkbox::after {
+  position: absolute;
+  content: "";
+  background-color: white;
+}
+.group-two-item input[type="checkbox"]:checked + .checkbox::before {
+  transform: rotate(45deg);
+  width: 10px;
+  height: 4px;
+  bottom: 6px;
+  left: 2px;
+}
+.group-two-item input[type="checkbox"]:checked + .checkbox::after {
+  transform: rotate(-45deg);
+  width: 19px;
+  height: 4px;
+  bottom: 10px;
+  right: -7px;
 }
 .sorting-popular-wrap .sorting-select {
   padding-top: 8px;
