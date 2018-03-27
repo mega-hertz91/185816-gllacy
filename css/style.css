@@ -131,11 +131,12 @@ a {
 }
 .main-navigation-items {
   position: relative;
+  padding-bottom: 10px;
 }
 .hidden-menu {
   display: none;
   position: absolute;
-  bottom: -186px;
+  bottom: -176px;
   width: 145px;
   min-height: 170px;
   background-color: #f8f7f4;
@@ -192,6 +193,9 @@ a {
   flex-wrap: wrap;
   margin-left: auto;
 }
+.right-nav-case-item {
+  padding-bottom: 20px;
+}
 .right-nav-case-item > a {
   padding: 10px 20px;
   background-color: #9db1a5;
@@ -247,6 +251,7 @@ a {
   min-height: 215px;
   background-color: #f8f7f4;
   border-radius: 5px;
+  z-index: 2;
 }
 .hidden-login-fill {
   width: 242px;
@@ -327,6 +332,7 @@ a {
   height: 85px;
   background-color: #f8f7f4;
   border-radius: 5px;
+  z-index: 3;
 }
 .search-wrap input {
   font-family: inherit;
@@ -483,6 +489,11 @@ a {
   background-position: center;
   background-size: cover;
 }
+.main-acecream {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+}
 .main-acecream-list {
   list-style: none;
   margin: 0;
@@ -614,12 +625,13 @@ a {
   margin: auto;
   margin-bottom: 40px;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .news-blog-last-news {
   background-color: white;
   background-image: url("../img/index/last-news.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: -53px 39%;
   color: black;
   width: 560px;
   min-height: 220px;
@@ -634,6 +646,7 @@ a {
   color: black;
   font-size: 24px;
   line-height: 30px;
+  margin-bottom: 20px;
 }
 .news-blog-last-news p {
   margin: 0;
@@ -658,19 +671,19 @@ a {
   background-image: repeating-linear-gradient(135deg,white 2px, white 2px,#92cdff 2px, #92cdff 10px, white 10px, white 18px,
   #fe9e90 18px, #fe9e90 26px, white 26px, white 34px );
   width: 560px;
-  height: 220px;
+  min-height: 220px;
   border-radius: 15px;
 }
 .main-dispach-wrap {
   width: 550px;
-  height: 210px;
+  min-height: 210px;
   background-color: #f8f7f4;
-  margin: auto;
+  margin: 5px;
   border-radius: 15px;
 }
 .main-dispach-email {
   display: block;
-  margin: 0 10px;
+  margin: 30px 10px;
 }
 .main-dispach-email input {
   font: inherit;
@@ -1002,31 +1015,27 @@ a {
   display: flex;
 }
 .main-cart-item:first-of-type {
-  width: 217px;
-  margin-left: 75px;
-}
-.main-cart-item::before {
-  position: absolute;
-  top: -10px;
-  left: 26px;
-  content: "";
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-}
-.main-cart-list:first-of-type .main-cart-item:first-of-type::before {
-  background-image: url("../img/gllacy-catalog/block1.jpg");
-  background-size: cover;
-}
-.main-cart-list:nth-of-type(2) .main-cart-item:first-of-type::before {
-  background-image: url("../img/gllacy-catalog/block3.jpg");
-  background-size: cover;
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
 }
 .main-cart-item:nth-of-type(2) {
+  width: 217px;
+  margin-left: 60px;
+}
+.main-cart-item img {
+  position: absolute;
+  border-radius: 50%;
+  top: -9px;
+  left: 25px;
+  width: 34px;
+  height: 34px;
+}
+.main-cart-item:nth-of-type(3) {
   width: 115px;
   margin-left: 30px;
 }
-.main-cart-item:nth-of-type(3) {
+.main-cart-item:nth-of-type(4) {
   width: 65px;
   margin-left: 14px;
 }
@@ -1124,6 +1133,21 @@ a {
   top: -8px;
   z-index: 1;
   cursor: pointer;
+}
+.skroll-left:hover,
+.scroll-left:focus,
+.skroll-right:hover,
+.skroll-right:focus {
+  width: 22px;
+  height: 22px;
+}
+.skroll-left:hover,
+.scroll-left:focus {
+  margin-left: -1px;
+}
+.skroll-right:hover,
+.skroll-right:focus {
+  margin-right: -1px;
 }
 .skroll-left {
   left: 35px;
@@ -1350,7 +1374,6 @@ a {
   height: 405px;
   background-color: rgba(163, 181, 170, 0.3);
   border-radius: 5px;
-  z-index: 1;
 }
 .main-price-button {
   display: none;
@@ -1363,12 +1386,17 @@ a {
   position: absolute;
   left: 37px;
   bottom: -54px;
-  z-index: 3;
 }
 .main-price-list:hover .main-price-item::before,
 .main-price-list:focus .main-price-item::before,
 .main-price-list:hover .main-price-button {
   display: block;
+  z-index: 2;
+}
+.main-price-list:hover .main-price-button:focus,
+.main-price-list:hover img,
+.main-price-list:hover p {
+  z-index: 2;
 }
 .main-price-item p {
   position: absolute;
@@ -1415,6 +1443,10 @@ a {
   background-color: #9db1a5;
   padding: 4px 10px;
   border-radius: 50%;
+}
+.main-paginator-list a:active {
+  background-color: white;
+  color: black;
 }
 .main-paginator-item:first-of-type a {
   text-decoration: none;
