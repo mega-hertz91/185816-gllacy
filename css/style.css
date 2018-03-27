@@ -1063,11 +1063,19 @@ a {
   content: "";
   width: 18px;
   height: 18px;
-  border: 4px solid white;
+  border: 4px solid #e6ebe9;
   border-radius: 50%;
   left: -38px;
   top: -4px;
   cursor: pointer;
+}
+.group-one-item input[type="radio"]:hover + .checkbox-indicator,
+.group-one-item input[type="radio"]:focus + .checkbox-indicator {
+  border: 4px solid white;
+}
+.group-one-item input[type="radio"]:checked:hover + .checkbox-indicator::before,
+.group-one-item input[type="radio"]:checked:focus + .checkbox-indicator::before {
+  border: 5px solid white;
 }
 .group-one-item input[type="radio"]:checked + .checkbox-indicator::before {
   content: "";
@@ -1077,7 +1085,7 @@ a {
   top: 4px;
   left: 4px;
   border-radius: 50%;
-  border: 5px solid white;
+  border: 5px solid #e6ebe9;
 }
 .group-one-item input[type="radio"]:focus + .checkbox-indicator {
   border-color: #663d15;
@@ -1092,7 +1100,7 @@ a {
   content: "";
   width: 18px;
   height: 18px;
-  border: 2px solid white;
+  border: 2px solid #e6ebe9;
   border-radius: 2px;
   left: -35px;
   top: -2px;
@@ -1102,7 +1110,7 @@ a {
 .group-two-item input[type="checkbox"]:checked + .checkbox::after {
   position: absolute;
   content: "";
-  background-color: white;
+  background-color: #e6ebe9;
 }
 .group-two-item input[type="checkbox"]:checked + .checkbox::before {
   transform: rotate(45deg);
@@ -1117,6 +1125,16 @@ a {
   height: 4px;
   bottom: 10px;
   right: -7px;
+}
+.group-two-item input[type="checkbox"]:hover + .checkbox,
+.group-two-item input[type="checkbox"]:focus + .checkbox {
+  border: 2px solid white;
+}
+.group-two-item input[type="checkbox"]:checked:hover + .checkbox::before,
+.group-two-item input[type="checkbox"]:checked:hover + .checkbox::after,
+.group-two-item input[type="checkbox"]:checked:focus + .checkbox::before,
+.group-two-item input[type="checkbox"]:checked:focus + .checkbox::after {
+  background-color: white;
 }
 .sorting-popular-wrap .sorting-select {
   padding-top: 8px;
@@ -1140,6 +1158,11 @@ a {
   color: black;
   background-color: white;
 }
+.sorting-select:hover,
+.sorting-select:focus {
+  color: black;
+  background-color: white;
+}
 .sorting-group-one p,
 .sorting-group-two p,
 .scroll-wrap p,
@@ -1159,14 +1182,23 @@ a {
   margin-left: auto;
   min-width: 25px;
   height: 37px;
-  border: 2px solid white;
+  box-shadow: inset 0 0 0 2px white;
   cursor: pointer;
-  box-shadow: none;
+  border: none;
 
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: white;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: white;
+  color: black;
+}
+.filter-button:active {
+  box-shadow: inset 0 2px 0 1px gray;
+  background-color: #eaeaea;
 }
 .main-price {
   display: flex;
