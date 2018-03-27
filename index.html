@@ -4,7 +4,7 @@
            <meta charset="utf-8">
             <title>HTML Academy: Глейси</title>
             <link rel="stylesheet" type="text/css" href="css/normalize.css">
-            <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
 	          <link rel="stylesheet" type="text/css" href="css/style.css">
       </head>
       <body>
@@ -79,7 +79,7 @@
                         <form action="https://echo.htmlacademy.ru" method="post">
                           <div class="radio-item">
                               <label>
-                                  <input type="radio" name="slider" value="1">
+                                  <input type="radio" name="slider" value="1" checked>
                                   <span class="slider-radio-item"></span>
                                   1
                               </label>
@@ -120,22 +120,22 @@
                           <li class="main-acecream-item">
                               <img src="img/index/acecream1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом">
                               <p class="main-acecream-price">310&#8381;/<span>кг</span></p>
-                              <a href="acecream.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                              <a class="link-underline" href="acecream.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                           </li>
                           <li class="main-acecream-item">
                              <img src="img/index/acecream2.jpg" width="267" height="267" alt="Кофейное мороженое">
                              <p class="main-acecream-price">380&#8381;/<span>кг</span></p>
-                             <a href="acecream.html">Сливочно-кофейное с кусочками шоколада</a>
+                             <a class="link-underline" href="acecream.html">Сливочно-кофейное с кусочками шоколада</a>
                           </li>
                           <li class="main-acecream-item">
                               <img src="img/index/acecream3.jpg" width="267" height="267" alt="Клубничное мороженое">
                               <p class="main-acecream-price">355&#8381;/<span>кг</span></p>
-                              <a href="acecream.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                              <a class="link-underline" href="acecream.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
                           </li>
                           <li class="main-acecream-item">
                               <img src="img/index/acecream4.jpg" width="267" height="267" alt="Клубничное мороженое">
                               <p class="main-acecream-price">415&#8381;/<span>кг</span></p>
-                              <a href="acecream.html">Сливочное крем-брюле с карамельной подливкой</a>
+                              <a class="link-underline" href="acecream.html">Сливочное крем-брюле с карамельной подливкой</a>
                           </li>
                     </ul>
               </section>
@@ -216,35 +216,35 @@
                     </ul>
                 </div>
                 <ul class="footer-information-list">
-                    <li><a href="#">Для поставщиков</a></li>
-                    <li><a href="about-prodaction.html">О производстве</a></li>
+                    <li><a class="link-underline bold" href="#">Для поставщиков</a></li>
+                    <li><a class="link-underline" href="about-prodaction.html">О производстве</a></li>
                 </ul>
                 <ul class="footer-document-list">
-                    <li><a href="#">Наши документы</a></li>
-                    <li><a href="environmental-standards.html">Экологические стандарты</a></li>
+                    <li><a class="link-underline" href="#">Наши документы</a></li>
+                    <li><a class="link-underline" href="environmental-standards.html">Экологические стандарты</a></li>
                 </ul>
-                    <p class="copyright-footer">Сделано в <a href="http://htmlacademy.ru">HTML Academy &copy; 2017</a></p>
+                    <p class="copyright-footer">Сделано в <a class="link-underline" href="http://htmlacademy.ru">HTML Academy &copy; 2017</a></p>
               </div>
           </footer>
-          <!--<section class="modal-feedback">
+          <section class="modal-feedback">
               <h2 class="visually-hidden">Форма обратной связи</h2>
-              <p>Мы обязательно вам ответим!</p>
+              <p class="modal-caption">Мы обязательно вам ответим!</p>
               <form class="main-form-feedback" action="https://echo.htmlacademy.ru" method="post">
-                  <p>
+                  <p class="modal-feedback-item">
                       <label class="visually-hidden" for="feedback-name">Ваше имя</label>
                       <input type="text" name="form-name" id="feedback-name" placeholder="Как вас зовут?">
                   </p>
-                  <p>
+                  <p class="modal-feedback-item">
                       <label class="visually-hidden" for="main-form-email">Электронная почта</label>
                       <input type="email" name="form-email" id="main-form-email" placeholder="Ваша почта для ответа?">
                   </p>
-                  <p>
+                  <p class="modal-feedback-item">
                       <label class="visually-hidden" for="form-comments">Комментарий</label>
-                      <textarea name="comments" id="form-comments" placeholder="Напишите что-нибудь..."></textarea>
-                  </p>
-                  <input type="submit" value="Отправить">
+                      <textarea name="comments" id="form-comments" rows="6" placeholder="Напишите что-нибудь..."></textarea>
+                  </p class="modal-feedback-item">
+                  <button class="button-site modal-button" type="submit">Отправить</button>
               </form>
-              <button class="button-modal-feedback" aria-label="Закрыть форму обратной связи"></button>
-          </section>-->
+              <button class="modal-close" type="button" aria-label="Закрыть форму обратной связи"></button>
+          </section>
       </body>
 </html>

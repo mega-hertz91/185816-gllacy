@@ -30,6 +30,16 @@ a {
   color: white;
   text-decoration: underline;
 }
+.link-underline {
+  text-decoration: none;
+  border-bottom: 1px solid #b2b2b2;
+}
+.link-underline:hover,
+.link-underline:focus,
+.link-underline:active {
+  border-bottom: 1px solid #f9cdc4;
+  color: #ffbc9e;
+}
 .wrap-center-foo,
 .wrap-center-head {
   width: 1150px;
@@ -37,6 +47,10 @@ a {
 }
 .wrap-center {
   width: 1200px;
+  margin: auto;
+}
+.wrap-center-catalog {
+  width: 1150px;
   margin: auto;
 }
 .catalog-padding {
@@ -244,6 +258,8 @@ a {
   color: white;
   padding: 12px 25px;
   cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
 .hidden-login a {
   display: block;
@@ -391,6 +407,9 @@ a {
   border-radius: 50%;
   cursor: pointer;
 }
+.radio-item input[type="radio"]:hover + .slider-radio-item {
+  background-color: #b2c1b7;
+}
 .radio-item input[type="radio"]:checked + .slider-radio-item::before {
   content: "";
   position: absolute;
@@ -405,6 +424,7 @@ a {
   margin: auto;
   margin-bottom: 40px;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .main-baner h3 {
   padding: 0;
@@ -421,15 +441,15 @@ a {
   margin-left: 15px;
   font-size: 18px;
   line-height: 22px;
+  margin-bottom: 50px;
 }
 .main-baner .button-sale {
-  display: inline-block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  min-width: 20px;
+  display: block;
+  min-width: 50px;
   float: right;
-  margin-top: 45px;
+  padding: 11px 22px;
   margin-right: 22px;
+  margin-bottom: 22px;
 }
 .baner-sale-jam,
 .baner-sale-chocolate {
@@ -446,12 +466,14 @@ a {
   background-image: url("../img/index/raspberries-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .main-baner .baner-sale-chocolate {
   background-color: #805237;
   background-image: url("../img/index/chocolate-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .main-acecream-list {
   list-style: none;
@@ -787,12 +809,94 @@ a {
   background-image: url("../img/svg-gllacy/logo-htmlacademy.svg");
 }
 /*--------Modal-------*/
-.modal-feedback p {
+.modal-feedback {
+  display: none;
+  position: fixed;
+  width: 480px;
+  min-height: 445px;
+  top: 50%;
+  left: 50%;
+  margin-top: -222.5px;
+  margin-left: -240px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  padding: 20px 25px;
+}
+.modal-feedback .modal-caption {
 	color: black;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+.modal-feedback-item:not(:last-of-type) {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.modal-feedback-item textarea {
+  margin: 0;
+  margin-bottom: 25px;
 }
 .modal-feedback input,
 .modal-feedback textarea {
-  font: inherit;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.modal-feedback input {
+  width: 265px;
+}
+.modal-feedback input:hover {
+  box-shadow: 0 0 0 2px #d3d3d2;
+}
+.modal-feedback textarea {
+  width: 449px;
+}
+.modal-button {
+  display: flex;
+  margin-left: auto;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  font-size: 18px;
+  line-height: 24px;
+  cursor: pointer;
+}
+.modal-close {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  background: none;
+  border: none;
+}
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  cursor: pointer;
+}
+.modal-close::before {
+  transform: rotate(45deg);
+}
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+.body-blackout {
+  position: fixed;
+  width: 100%;
+  min-height: 1080px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 50;
 }
 /*------Gllacy-catalog------*/
 .gl-catalog {
@@ -868,6 +972,7 @@ a {
   top: 34px;
   background-color: #f8f7f4;
   border-radius: 5px;
+  z-index: 2;
 }
 .main-cart-fill {
   width: 514px;
@@ -1267,6 +1372,14 @@ a {
 .main-price-item img {
   border-radius: 50%;
 }
+.link-price {
+  position: relative;
+  color: white;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  z-index: 2;
+}
 .main-paginator {
   display: flex;
   width: 100%;
@@ -1290,8 +1403,8 @@ a {
 }
 .main-paginator-list a:hover,
 .main-paginator-list a:focus {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: #9db1a5;
   padding: 4px 10px;
   border-radius: 50%;
 }
@@ -1352,4 +1465,7 @@ a {
   font-size: 13px;
   line-height: 16px;
   font-weight: 400;
+}
+.bold {
+  font-weight: 700;
 }
