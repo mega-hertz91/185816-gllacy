@@ -115,7 +115,7 @@ a {
 }
 .main-navigation-items > a:active {
   background-color: rgba(248, 247, 244, 0.988);
-  box-shadow: inset 0px 2px 3px 3px rgba(105, 105, 105, 0.004);
+  box-shadow: inset 0px 1px 0 1px gray;
 }
 .main-navigation-link {
   width: 100%;
@@ -124,6 +124,10 @@ a {
 .main-navigation-items > a:hover .main-navigation-link,
 .main-navigation-items > a:focus .main-navigation-link {
   border: none;
+}
+.navigation-link-active {
+  background-color: #d07058;
+  border-radius: 25px;
 }
 .main-navigation-items {
   position: relative;
