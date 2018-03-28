@@ -362,6 +362,10 @@ a {
   font-size: 22px;
   line-height: 24px;
 }
+.number:hover,
+.number:focus {
+  color: #ffbc9e;
+}
 /*-------Main-content-----*/
 .main-slider {
   width: 1150px;
