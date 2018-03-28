@@ -878,6 +878,7 @@ a {
 .modal-feedback-item textarea {
   margin: 0;
   margin-bottom: 25px;
+  resize: none;
 }
 .modal-feedback input,
 .modal-feedback textarea {
