@@ -161,6 +161,7 @@ a {
   padding: 10px 15px;
 }
 .hidden-menu-item {
+  position: relative;
   width: 100%;
   min-height: 30px;
 }
@@ -171,8 +172,14 @@ a {
 .hidden-menu-item:active {
   background-color: #f6b5a5;
 }
-.hidden-menu-item:first-of-type {
-  border-bottom: 1px solid #d1d0ce;
+.hidden-menu-item:first-of-type::before {
+  content: "";
+  position: absolute;
+  width: 129px;
+  height: 1px;
+  bottom: 0;
+  left: 8px;
+  background-color: #d1d0ce;
 }
 .hidden-menu-item:first-of-type a {
   font-weight: bold;
@@ -362,6 +369,14 @@ a {
   align-items: center;
   position: relative;
   z-index: 0;
+}
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.slider-list-item {
+  display: none;
 }
 .main-slider .number,
 .main-slider .slider-button {
@@ -647,6 +662,15 @@ a {
   font-size: 24px;
   line-height: 30px;
   margin-bottom: 20px;
+  text-decoration: none;
+}
+.last-news-link {
+  border-bottom: 2px solid black;
+}
+.last-news-link:hover,
+.last-news:focus {
+  color: #ffbc9e;
+  border-color: #ffbc9e;
 }
 .news-blog-last-news p {
   margin: 0;
@@ -820,14 +844,10 @@ a {
   position: relative;
   margin-left: auto;
 }
-.copyright-footer::before {
-  content: "";
-  width: 110px;
-  height: 38px;
+.copyright-footer svg {
   position: absolute;
   top: -40px;
-  left: 0px;
-  background-image: url("../img/svg-gllacy/logo-htmlacademy.svg");
+  left: 0;
 }
 /*--------Modal-------*/
 .modal-feedback {
@@ -1103,7 +1123,7 @@ a {
 }
 .main-filter {
   margin-bottom: 40px;
-  width: 877px;
+  width: 856px;
 }
 .filter-sorting form {
   display: flex;
@@ -1179,12 +1199,12 @@ a {
   margin-bottom: 15px;
 }
 .group-one-item {
-  margin-left: 40px;
+  margin-left: 35px;
   padding-right: 10px;
   position: relative;
 }
 .group-two-item {
-  margin-left: 40px;
+  margin-left: 38px;
   padding-right: 10px;
   position: relative;
 }
@@ -1374,6 +1394,7 @@ a {
   height: 405px;
   background-color: rgba(163, 181, 170, 0.3);
   border-radius: 5px;
+  cursor: pointer;
 }
 .main-price-button {
   display: none;
@@ -1393,10 +1414,11 @@ a {
   display: block;
   z-index: 2;
 }
-.main-price-list:hover .main-price-button:focus,
-.main-price-list:hover img,
-.main-price-list:hover p {
+.main-price-item:hover .main-price-button,
+.main-price-item:hover img,
+.main-price-item:hover p {
   z-index: 2;
+  cursor: pointer;
 }
 .main-price-item p {
   position: absolute;
@@ -1406,6 +1428,7 @@ a {
   bottom: 75px;
 }
 .main-price-item img {
+  position: relative;
   border-radius: 50%;
 }
 .link-price {
