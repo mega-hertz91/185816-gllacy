@@ -2,13 +2,13 @@
   var modal = document.querySelector(".modal-feedback");
   var layer = document.querySelector(".layer");
   var modalClose = document.querySelector(".modal-close");
-  var name = modal.querySelector("[name=form-name]");
+  var nameInput = modal.querySelector("[name=form-name]");
 
   link.addEventListener("click", function(evt) {
     evt.preventDefault();
     modal.classList.add("modal-open");
     layer.classList.add("modal-open");
-    name.focus();
+    nameInput.focus();
 })
 
   modalClose.addEventListener("click", function(evt){
