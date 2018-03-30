@@ -1,5 +1,4 @@
 /*----My style.css-------*/
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -26,6 +25,9 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
 }
+a {
+  color: white;
+}
 .layer {
   display: none;
   content: "";
@@ -36,10 +38,6 @@ body {
   height: 2500px;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 2;
-}
-a {
-  color: white;
-  text-decoration: underline;
 }
 .link-underline {
   text-decoration: none;
@@ -147,7 +145,7 @@ a {
 }
 .main-navigation-link {
   width: 100%;
-  border-bottom: 1px solid #b1c8bb;
+  border-bottom: 1px solid rgba(176,192,183, 0.45);
 }
 .main-navigation-items > a:hover .main-navigation-link,
 .main-navigation-items > a:focus .main-navigation-link {
@@ -242,7 +240,7 @@ a {
 }
 .right-nav-case-item > a {
   padding: 7px 16px;
-  background-color: #9db1a5;
+  background-color: rgba(176, 192, 183, 0.3);
   border-radius: 25px;
   margin-left: 10px;
   text-decoration: none;
@@ -461,7 +459,9 @@ a {
 }
 .main-slider .slider-button {
   display: inline-block;
+  vertical-align: top;
   font-size: 32px;
+  vertical-align: top;
   line-height: 44px;
   padding: 10px 40px;
 }
@@ -484,7 +484,9 @@ a {
 }
 .slider-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 17px;
+  vertical-align: top;
   height: 17px;
   margin-right: 8px;
 
@@ -540,11 +542,9 @@ a {
 
   visibility: hidden;
 }
-
 .site-wrapper::before {
   background-image: url("..//img/index/layer2.png");
 }
-
 .site-wrapper::after {
   background-image: url("..//img/index/layer3.png");
 }
@@ -715,6 +715,7 @@ a {
 }
 .about-us h3 {
   display: inline-block;
+  vertical-align: top;
   padding: 0;
   margin: 0;
   margin-top: 25px;
@@ -1332,6 +1333,7 @@ a {
 }
 .cart-button {
   display: inline-block;
+  vertical-align: top;
   text-decoration: none;
   padding: 10px 15px;
   font-size: 18px;
@@ -1429,17 +1431,17 @@ a {
   margin-right: -1px;
 }
 .skroll-left {
-  left: 35px;
+  left: 10px;
 }
 .skroll-right {
-  right: 37px;
+  right: 52px;
 }
 .skroll-field {
-  width: 70px;
+  width: 80px;
   height: 5px;
   background-color: white;
   position: absolute;
-  left: 54px;
+  left: 30px;
 }
 .filter-sorting .group-one-item-wrap,
 .filter-sorting .group-two-item-wrap,
@@ -1476,8 +1478,8 @@ a {
   margin-bottom: 15px;
 }
 .group-one-item {
-  margin-left: 30px;
-  margin-right: 5px;
+  margin-left: 29px;
+  margin-right: 4px;
   position: relative;
 }
 .group-two-item {
@@ -1493,12 +1495,12 @@ a {
 .group-one-item input[type="radio"] + .checkbox-indicator {
   position: absolute;
   content: "";
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   border: 4px solid #e6ebe9;
   border-radius: 50%;
-  left: -38px;
-  top: -4px;
+  left: -34px;
+  top: -3px;
   cursor: pointer;
 }
 .group-one-item input[type="radio"]:hover + .checkbox-indicator,
@@ -1514,8 +1516,8 @@ a {
   position: absolute;
   width: 0px;
   height: 0px;
-  top: 4px;
-  left: 4px;
+  top: 3px;
+  left: 3px;
   border-radius: 50%;
   border: 5px solid #e6ebe9;
 }
@@ -1748,7 +1750,7 @@ a {
   display: flex;
   width: 100%;
   margin-top: 45px;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 .main-paginator-list {
   display: -webkit-box;

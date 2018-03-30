@@ -9,10 +9,10 @@
     modal.classList.add("modal-open");
     layer.classList.add("modal-open");
     nameInput.focus();
-})
+  })
 
   modalClose.addEventListener("click", function(evt){
-  evt.preventDefault();
-  modal.classList.remove("modal-open");
-  layer.classList.remove("modal-open");
-})
+    evt.preventDefault();
+    modal.classList.remove("modal-open");
+    layer.classList.remove("modal-open");
+  })
