@@ -258,7 +258,7 @@ a {
 }
 .right-nav-case-item:nth-of-type(2) svg {
   position: absolute;
-  top: 7px;
+  top: 5px;
   left: 17px;
 }
 .enter:hover path,
@@ -331,7 +331,7 @@ a {
 }
 .right-nav-case-item:last-of-type svg {
   position: absolute;
-  top: 7px;
+  top: 5px;
   left: 17px;
 }
 .right-nav-case-item .cart {
@@ -374,10 +374,11 @@ a {
   line-height: 24px;
   font-weight: 400;
   padding: 10px 14px;
-  margin: 21px 17.5px;
+  margin: 21px 17px;
   width: 310px;
   border: 1px solid #d3d3d2;
   border-radius: 3px;
+  box-sizing: border-box;
 }
 .number {
   text-decoration: none;
@@ -611,12 +612,27 @@ a {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-.main-acecream-item .main-acecream-price {
+.main-acecream-price {
   position: absolute;
   margin: 0;
   padding: 0;
   bottom: 75px;
   left: 0px;
+}
+.main-acecream-price span {
+  margin-left: 35px;
+}
+.main-acecream-price::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 40px;
+  top: -13px;
+  left: 82px;
+  background-image: url("../img/svg-gllacy/ruble.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 .main-acecream img {
   border-radius: 50%;
@@ -661,7 +677,7 @@ a {
 .about-us-wrap p {
   padding: 0;
   margin: 0;
-  margin-left: 75px;
+  margin-left: 76px;
   width: 485px;
   font-size: 16px;
   line-height: 22px;
@@ -837,7 +853,7 @@ a {
   line-height: 24px;
 }
 .main-feedback-wrap p {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .main-feedback a {
   display: block;
@@ -845,7 +861,7 @@ a {
   line-height: 24px;
   padding: 0;
   margin: 0 24px;
-  margin-top: 25px;
+  margin-top: 30px;
   padding: 10px 27px;
   text-decoration: none;
 }
@@ -855,7 +871,7 @@ a {
   width: 1150px;
   min-height: 40px;
   margin:auto;
-  padding-top: 34px;
+  padding-top: 30px;
 }
 .main-social-list,
 .footer-information-list,
@@ -901,8 +917,10 @@ a {
 }
 .footer-information-list {
   text-align: left;
-  margin-right: 25px;
+  margin-right: 33px;
   position: relative;
+  font-size: 12px;
+  line-height: 16px;
 }
 .footer-document-list li,
 .footer-information-list li {
@@ -923,17 +941,20 @@ a {
 .footer-document-list {
   padding-left: 0;
 }
-.copyright-footer {
+.wrap-center-foo .copyright-footer {
   position: relative;
   margin-left: auto;
   margin: 0;
   margin-left: auto;
-  margin-top: 24px;
+  margin-top: 27px;
+  margin-right: 5px;
+  font-size: 12px;
+  line-height: 16px;
 }
 .copyright-footer svg {
   position: absolute;
-  top: -42px;
-  left: 13px;
+  top: -43px;
+  left: 3px;
 }
 /*--------Modal-------*/
 .modal-feedback {
@@ -1323,11 +1344,13 @@ a {
   margin-bottom: 15px;
 }
 .group-one-item {
-  margin-left: 35px;
+  margin-left: 30px;
+  margin-right: 5px;
   position: relative;
 }
 .group-two-item {
   margin-left: 30px;
+  margin-right: -5px;
   position: relative;
 }
 .group-one-item label,
@@ -1409,7 +1432,7 @@ a {
   padding-top: 8px;
   padding-bottom: 6px;
   padding-left: 15px;
-  padding-right: 16px;
+  padding-right: 30px;
   background-color: #aabcb2;
   border-radius: 25px;
   min-width: 25px;
@@ -1486,7 +1509,7 @@ a {
   line-height: 13px;
 }
 .main-price-list span {
-  font-size: 35px;
+  font-size: 30px;
 }
 .main-price-list .price-link {
   position: relative;
