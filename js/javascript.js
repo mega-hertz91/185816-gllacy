@@ -3,18 +3,16 @@
   var layer = document.querySelector(".layer");
   var modalClose = document.querySelector(".modal-close");
   var nameInput = modal.querySelector("[name=form-name]");
-  var map = document.querySelector(".main-map-adress");
-  var mapFill = document.querySelector(".map-hidden");
 
   link.addEventListener("click", function(evt) {
     evt.preventDefault();
     modal.classList.add("modal-open");
     layer.classList.add("modal-open");
     nameInput.focus();
-  })
+  });
 
   modalClose.addEventListener("click", function(evt){
     evt.preventDefault();
     modal.classList.remove("modal-open");
     layer.classList.remove("modal-open");
-  })
+  });
