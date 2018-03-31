@@ -898,6 +898,7 @@ a {
   line-height: 24px;
 }
 .main-map-adress {
+  position: relative;
   width: 100%;
   height: 430px;
   background-image: url("../img/index/index-map.jpg");
