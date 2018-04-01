@@ -99,6 +99,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: start;
@@ -467,9 +468,9 @@ a {
 }
 .main-slider h2 {
   font-size: 60px;
-  line-height: 60.35px;
+  line-height: 60px;
   text-align: center;
-  width: 670px;
+  width: 675px;
   margin-bottom: 32px;
 }
 .slider-list {
@@ -550,8 +551,8 @@ a {
 }
 .main-number {
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 4px;
+  top: 72px;
   text-align: right;
 }
 .main-number p {
@@ -897,6 +898,11 @@ a {
   font-size: 18px;
   line-height: 24px;
 }
+.wrap-center-feedback {
+  position: relative;
+  width: 1150px;
+  margin: auto;
+}
 .main-map-adress {
   position: relative;
   width: 100%;
@@ -910,7 +916,7 @@ a {
 }
 .main-feedback {
   position: absolute;
-  right: 30px;
+  right: 0px;
   bottom: 60px;
   background-color: white;
   width: 300px;
@@ -1205,6 +1211,7 @@ a {
 .page-navigation-item {
   position: relative;
   margin-right: 20px;
+  margin-top: 24px;
 }
 .page-navigation-item a {
   text-decoration: none
@@ -1574,19 +1581,27 @@ a {
   padding-top: 8px;
   padding-bottom: 6px;
   padding-left: 15px;
-  padding-right: 30px;
+  padding-right: 45px;
   background-color: #aabcb2;
   border-radius: 25px;
   min-width: 25px;
   margin-right: 15px;
   border: none;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
 
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: white;
+}
+.sorting-select::-ms-expand {
+  width: 0;
+  height: 0;
 }
 .sorting-select option {
   color: black;
@@ -1669,9 +1684,9 @@ a {
 .main-price-item-index {
   position: relative;
   width: 270px;
-  height: 317px;
+  min-height: 317px;
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 42px;
 }
 
 .main-price-item::before,
@@ -1681,8 +1696,9 @@ a {
   position: absolute;
   top: -5px;
   left: -13px;
+  bottom: -80px;
   width: 294px;
-  height: 405px;
+  min-height: 405px;
   background-color: rgba(163, 181, 170, 0.3);
   border-radius: 5px;
   cursor: pointer;
@@ -1707,7 +1723,7 @@ a {
 
   position: absolute;
   left: 37px;
-  bottom: -54px;
+  bottom: -58px;
 }
 .main-price-list:hover .main-price-item::before,
 .main-price-list:focus .main-price-item::before,
@@ -1732,7 +1748,7 @@ a {
   margin: 0;
   padding: 0;
   left: 0px;
-  bottom: 75px;
+  top: 220px;
 }
 .main-price-item img,
 .main-price-item-index img {
@@ -1753,7 +1769,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin-top: 45px;
+  margin-top: 40px;
   margin-bottom: 32px;
 }
 .main-paginator-list {
