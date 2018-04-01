@@ -554,6 +554,7 @@ a {
   right: 4px;
   top: 72px;
   text-align: right;
+  z-index: 3;
 }
 .main-number p {
   font-size: 14px;
@@ -1598,6 +1599,9 @@ a {
   font-weight: 500;
   color: white;
 }
+.sorting-popular-wrap select {
+ height: 35px
+}
 .sorting-select::-ms-expand {
   width: 0;
   height: 0;
@@ -1729,14 +1733,14 @@ a {
 .main-price-button {
   display: none;
   text-decoration: none;
-  padding: 10px 17px;
+  padding: 10px 18px;
   margin: 0;
   font-size: 18px;
   line-height: 24px;
 
   position: absolute;
-  left: 37px;
-  bottom: -58px;
+  left: 34px;
+  bottom: -57px;
 }
 .main-price-list:hover .main-price-item::before,
 .main-price-list:focus .main-price-item::before,
@@ -1761,7 +1765,7 @@ a {
   margin: 0;
   padding: 0;
   left: 0;
-  top: 220px;
+  top: 223px;
 }
 .main-price-item img,
 .main-price-item-index img {
